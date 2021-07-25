@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		    <meta charset="utf-8">
+		    <title>ファイルアップロード</title>
+		    <script src="{{ url_for('static', filename='script.js') }}"></script>
+		    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	<body>
+		<form method="POST" action="/upload" enctype="multipart/form-data">
+		    <input type="file" name="file">
+		    <input type="submit">
+		</form>
+	</body>
+</html>

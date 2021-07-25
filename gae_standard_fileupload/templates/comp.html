@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+        <head>
+             <meta charset="utf-8">
+             <title>完了</title>
+             <script src="{{ url_for('static', filename='script.js') }}"></script>
+             <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        </head>
+        <body>
+             <p> ファイルアップロードが完了しました。</p>
+             <p> 続いてファイルをアップロードする場合は「アップロードを続ける」ボタンを押下してください。
+             <form method="GET" action="/testback">
+		  <button type="submit" >戻る</button>
+             </form>
+        </body>
+</html>
